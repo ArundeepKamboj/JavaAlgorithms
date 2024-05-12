@@ -38,5 +38,28 @@ public class Main {
 
         boolean is_unique = UniqueArray.isUnique(continuos_array);
         System.out.println("Array is Unique? " + is_unique);
+
+        Main.singleDimensionArray();
+    }
+
+    static void singleDimensionArray(){
+        SingleDimensionArray sda = new SingleDimensionArray(10);
+        System.out.println("Array created is : " + Arrays.toString(sda.arr));
+        sda.insert(0,0);
+        sda.insert(1,1);
+        sda.insert(2,2);
+        sda.insert(3,3);
+        sda.insert(4,4);
+        sda.insert(5,5);
+        sda.insert(6,6);
+        sda.insert(10,10);
+        System.out.println("Array is : " + Arrays.toString(sda.arr));
+        sda.traverseArray();
+
+        sda.searchInArray(10);
+        sda.searchInArray(4);
+
+        sda.delete(4);
+        sda.traverseArray();
     }
 }
