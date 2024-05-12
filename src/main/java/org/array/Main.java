@@ -29,5 +29,8 @@ public class Main {
 
         int distinct_numbers = RemoveDuplictes.distinct_numbers_in_sorted_array(sorted_array);
         System.out.println("Array numbers after removing duplicates are : " + distinct_numbers);
+
+        int index = Search.searchInArray(one_d_array,134);
+        System.out.println("Number is present at index : " + index);
     }
 }
