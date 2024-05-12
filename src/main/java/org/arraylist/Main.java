@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args){
-        ArrayList<Integer> numbers = new ArrayList(Arrays.asList(1,2,3,4,5));
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(1,2,3,4,5));
         System.out.println(numbers);
         numbers.add(6);
         System.out.println(numbers);
@@ -26,7 +26,7 @@ public class Main {
         Main.remove(numbers,8);
         System.out.println(numbers);
 
-        ArrayList<String> al_string = new ArrayList<String>(Arrays.asList("A","B","C","D","E"));
+        ArrayList<String> al_string = new ArrayList<>(Arrays.asList("A","B","C","D","E"));
         System.out.println(al_string);
         Main.search(al_string,"F");
         Main.search(al_string,"D");
