@@ -1,5 +1,7 @@
 package org.array;
 
+import java.util.Arrays;
+
 public class SingleDimensionArray {
     int[] arr;
 
@@ -54,5 +56,19 @@ public class SingleDimensionArray {
         } catch(ArrayIndexOutOfBoundsException e){
             System.out.println("The index value provided is not in the range of the Array.");
         }
+    }
+
+    void reverseArray(){
+        System.out.println("Array received for reversal is : " + Arrays.toString(this.arr));
+        int front=0, end = this.arr.length-1;
+        int temp;
+        while(front<end){
+            temp = this.arr[front];
+            this.arr[front] = this.arr[end];
+            this.arr[end]=temp;
+            front++;
+            end--;
+        }
+        System.out.println("reversed array is : " + Arrays.toString(this.arr));
     }
 }

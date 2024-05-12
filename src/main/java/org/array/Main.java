@@ -65,6 +65,8 @@ public class Main {
 
         sda.delete(4);
         sda.traverseArray();
+
+        sda.reverseArray();
     }
 
     static void twoDimensionArray(){
