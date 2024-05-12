@@ -40,6 +40,7 @@ public class Main {
         System.out.println("Array is Unique? " + is_unique);
 
         Main.singleDimensionArray();
+        Main.twoDimensionArray();
     }
 
     static void singleDimensionArray(){
@@ -61,5 +62,33 @@ public class Main {
 
         sda.delete(4);
         sda.traverseArray();
+    }
+
+    static void twoDimensionArray(){
+        TwoDimensionalArray tda = new TwoDimensionalArray(3,3);
+        System.out.println("Array created is : " + Arrays.deepToString(tda.arr));
+
+        tda.insert(0,0,0);
+        tda.insert(0,1,1);
+        tda.insert(0,2,2);
+        tda.insert(1,0,3);
+        tda.insert(1,1,4);
+        tda.insert(1,2,5);
+        tda.insert(2,0,6);
+        tda.insert(2,1,7);
+        tda.insert(2,2,8);
+        System.out.println("Array after insertion is : " + Arrays.deepToString(tda.arr));
+
+        tda.accessCell(1,2);
+        tda.accessCell(1,3);
+
+        tda.traverse2DArray();
+
+        tda.search(5);
+        tda.search(10);
+
+        tda.delete(1,2);
+        tda.delete(3,4);
+        tda.traverse2DArray();
     }
 }
