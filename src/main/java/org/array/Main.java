@@ -32,5 +32,11 @@ public class Main {
 
         int index = Search.searchInArray(one_d_array,134);
         System.out.println("Number is present at index : " + index);
+
+        int[] find_two_sum_index = TwoSum.twoSum(one_d_array, 6);
+        System.out.println("Target is at indexes : " + Arrays.toString(find_two_sum_index));
+
+        boolean is_unique = UniqueArray.isUnique(continuos_array);
+        System.out.println("Array is Unique? " + is_unique);
     }
 }
