@@ -41,6 +41,9 @@ public class Main {
 
         Main.singleDimensionArray();
         Main.twoDimensionArray();
+
+        boolean res = RotateMatrix.rotateMatrix(two_d_array_1);
+
     }
 
     static void singleDimensionArray(){
