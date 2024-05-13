@@ -54,4 +54,70 @@ public class SinglyLinkedList {
             System.out.println(tempNode.value);
         }
     }
+
+    boolean search(int value){
+        if(this.head != null){
+            Node tempNode = head;
+            boolean found = false;
+            while(tempNode != null){
+                if(tempNode.value ==value){
+                    found = true;
+                    System.out.println("Value found in SLL.");
+                    break;
+                }
+                tempNode = tempNode.next;
+            }
+            if(!found){
+                System.out.println("Value not found in SLL.");
+            }
+            return  found;
+        }
+        System.out.println("SLL is empty so value not found.");
+        return false;
+    }
+
+    // delete from a given location.
+    void delete(int location){
+        if(this.head == null){
+            System.out.println("SLL doesn't exist.");
+        } else if (location==0) {
+            if(this.size==1){
+                this.head=null;
+                this.tail=null;
+                this.size=0;
+            } else{
+                this.head = this.head.next;
+                size--;
+            }
+        } else if(location >=this.size){
+            if(this.size ==1){
+                this.head=null;
+                this.tail=null;
+                size=0;
+            } else{
+                Node tempNode = this.head;
+                for(int i =0; i<this.size-2; i++){
+                    tempNode=tempNode.next;
+                }
+                tempNode.next = null;
+                this.tail = tempNode;
+                this.size--;
+            }
+        } else{
+            Node tempNode=this.head;
+            while(location > 1){
+                tempNode = tempNode.next;
+                location--;
+            }
+            tempNode.next = tempNode.next.next;
+            this.size--;
+        }
+    }
+
+    //delete linked list
+    void deleteSLL(){
+        this.head=null;
+        this.tail=null;
+        this.size=0;
+    }
 }

@@ -16,6 +16,18 @@ public class Main {
         sll.insert(6,6);
 
         sll.traverseSinglyLinkedList();
+        sll.search(5);
+        sll.search(10);
 
+        sll.delete(3);
+        sll.delete(3);
+        sll.traverseSinglyLinkedList();
+        sll.delete(100);
+        sll.traverseSinglyLinkedList();
+        sll.delete(0);
+        sll.traverseSinglyLinkedList();
+
+        sll.deleteSLL();
+        sll.traverseSinglyLinkedList();
     }
 }
