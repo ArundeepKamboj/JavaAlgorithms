@@ -27,6 +27,9 @@ public class Main {
         sll.delete(0);
         sll.traverseSinglyLinkedList();
 
+        sll.rotate(2);
+        sll.traverseSinglyLinkedList();
+
         sll.deleteSLL();
         sll.traverseSinglyLinkedList();
     }

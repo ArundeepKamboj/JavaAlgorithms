@@ -120,4 +120,27 @@ public class SinglyLinkedList {
         this.tail=null;
         this.size=0;
     }
+
+    //Rotate
+    public String rotate(int number) {
+        int index = number;
+        if(this.size <=1){
+            return "No Rotation";
+        }
+        if (index > this.size){
+            index = index % this.size;
+        }
+        if(index > 0 && this.size > 1){
+            this.tail.next = this.head;
+            Node tempNode = this.head;
+            while(index > 1){
+                tempNode = tempNode.next;
+                index--;
+            }
+            this.tail = tempNode;
+            this.head = tempNode.next;
+            tempNode.next = null;
+        }
+        return "Success";
+    }
 }
