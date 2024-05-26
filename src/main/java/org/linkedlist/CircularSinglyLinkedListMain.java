@@ -23,5 +23,8 @@ public class CircularSinglyLinkedListMain {
         csll.traverse();
         csll.deleteNode(1);
         csll.traverse();
+
+        csll.deleteCSLL();
+        csll.traverse();
     }
 }
