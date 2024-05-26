@@ -1,5 +1,7 @@
 package org.linkedlist;
 
+import javax.swing.plaf.synth.SynthTextAreaUI;
+
 public class CircularSinglyLinkedList {
     public Node head;
     public Node tail;
@@ -56,6 +58,26 @@ public class CircularSinglyLinkedList {
             }
             node = node.next;
         }
+        System.out.println();
+    }
+
+    public boolean search(int valueToSearch){
+        if (head ==null){
+            System.out.println("CSLL is empty so this value doesn't exist in it.");
+            return false;
+        }
+        Node node = head;
+        int index = 0;
+        while(index < size){
+            if(valueToSearch==node.value){
+                System.out.println("Found Node at location : " + index);
+                return true;
+            }
+            node=node.next;
+            index++;
+        }
+        System.out.println("Node not found");
+        return false;
     }
 
 }

@@ -4,6 +4,7 @@ public class CircularSinglyLinkedListMain {
     public static void main(String[] args){
         CircularSinglyLinkedList csll = new CircularSinglyLinkedList();
 
+        csll.search(10);
         csll.createCSLL(5);
         csll.insert(4,0);
         csll.insert(1,8);
@@ -13,5 +14,7 @@ public class CircularSinglyLinkedListMain {
         System.out.println(csll.head.next.value);
 
         csll.traverse();
+        csll.search(10);
+        csll.search(9);
     }
 }
