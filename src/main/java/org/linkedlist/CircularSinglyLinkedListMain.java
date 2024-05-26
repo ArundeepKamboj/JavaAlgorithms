@@ -8,8 +8,10 @@ public class CircularSinglyLinkedListMain {
         csll.insert(4,0);
         csll.insert(1,8);
         csll.insert(2,2);
-        csll.insert(5,3);
+        csll.insert(9,3);
         System.out.println(csll.head.value);
         System.out.println(csll.head.next.value);
+
+        csll.traverse();
     }
 }
