@@ -19,5 +19,8 @@ public class DoublyLinkedListMain {
 
         dll.trverseDLL();
         dll.reversetraverseDLL();
+
+        dll.searchNode(3);
+        dll.searchNode(10);
     }
 }
