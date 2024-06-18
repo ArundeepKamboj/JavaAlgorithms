@@ -93,4 +93,32 @@ public class DoublyLinkedList {
         return false;
     }
 
+    //delete a node
+    public void deleteDLL(int location){
+        if(head ==null){
+            System.out.println("DLL doesn't exist");
+        } else{
+            if (size ==1 && location >=0){
+                head = null;
+                tail = null;
+            } else if(location < size-1){
+                DoublyNode tempNode = head;
+                for(int i = 0; i< location-1; i++){
+                    tempNode = tempNode.next;
+                }
+                if (location ==0){
+                    head = tempNode.next;
+                    head.prev = null;
+                } else{
+                    tempNode.next = tempNode.next.next;
+                    tempNode.next.prev = tempNode;
+                }
+            } else {
+                tail = tail.prev;
+                tail.next = null;
+            }
+            size--;
+        }
+    }
+
 }

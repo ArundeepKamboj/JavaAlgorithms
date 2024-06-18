@@ -22,5 +22,18 @@ public class DoublyLinkedListMain {
 
         dll.searchNode(3);
         dll.searchNode(10);
+
+        dll.deleteDLL(10);
+        dll.trverseDLL();
+        dll.deleteDLL(2);
+        dll.trverseDLL();
+        dll.deleteDLL(1);
+        dll.trverseDLL();
+        dll.deleteDLL(0);
+        dll.trverseDLL();
+        dll.deleteDLL(4);
+        dll.trverseDLL();
+        dll.deleteDLL(4);
+        dll.trverseDLL();
     }
 }
