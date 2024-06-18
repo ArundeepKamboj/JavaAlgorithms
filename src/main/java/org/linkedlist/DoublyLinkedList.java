@@ -47,4 +47,32 @@ public class DoublyLinkedList {
         size++;
     }
 
+    public void trverseDLL(){
+        if (head !=null){
+            DoublyNode tempNode = head;
+            while(tempNode.next !=null){
+                System.out.print(tempNode.value);
+                System.out.print(" <==> ");
+                tempNode=tempNode.next;
+            }
+            System.out.println(tempNode.value);
+        } else{
+            System.out.println("DLL doesn't exist");
+        }
+    }
+
+    public void reversetraverseDLL(){
+        if(tail != null){
+            DoublyNode tempNode = tail;
+            while(tempNode.prev != null){
+                System.out.print(tempNode.value);
+                System.out.print(" <==> ");
+                tempNode=tempNode.prev;
+            }
+            System.out.println(tempNode.value);
+        } else{
+            System.out.println("DLL doesn't exist");
+        }
+    }
+
 }
