@@ -35,5 +35,8 @@ public class DoublyLinkedListMain {
         dll.trverseDLL();
         dll.deleteDLL(4);
         dll.trverseDLL();
+
+        dll.deleteDLL();
+        dll.trverseDLL();
     }
 }

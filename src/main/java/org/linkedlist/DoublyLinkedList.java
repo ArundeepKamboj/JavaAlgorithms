@@ -121,4 +121,16 @@ public class DoublyLinkedList {
         }
     }
 
+    public void deleteDLL(){
+        DoublyNode tempNode = head;
+        while(tempNode != null){
+            tempNode.prev = null;
+            tempNode = tempNode.next;
+        }
+        size = 0;
+        head = null;
+        tail = null;
+        System.out.println("DLL has been deleted");
+    }
+
 }
