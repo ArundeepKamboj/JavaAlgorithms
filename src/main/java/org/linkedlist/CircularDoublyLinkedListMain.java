@@ -22,5 +22,7 @@ public class CircularDoublyLinkedListMain {
         cdll.deleteNode(10);
         System.out.println("Size of CDLL is : " + cdll.size);
         cdll.traverseCDLL();
+        cdll.deleteCDLL();
+        cdll.traverseCDLL();
     }
 }
