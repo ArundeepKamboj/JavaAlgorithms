@@ -18,6 +18,9 @@ public class CircularDoublyLinkedListMain {
         cdll.reverseTraversalCDLL();
         cdll.searchCDLL(10);
         cdll.searchCDLL(4);
-
+        System.out.println("Size of CDLL is : " + cdll.size);
+        cdll.deleteNode(10);
+        System.out.println("Size of CDLL is : " + cdll.size);
+        cdll.traverseCDLL();
     }
 }
