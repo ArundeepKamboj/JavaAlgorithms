@@ -23,5 +23,7 @@ public class Main {
 
         int peek = stack.peek();
         System.out.println("Peeked top value is : " + peek);
+
+        stack.deleteStack();
     }
 }

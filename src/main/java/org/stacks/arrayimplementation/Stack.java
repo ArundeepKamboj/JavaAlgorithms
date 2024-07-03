@@ -55,4 +55,10 @@ public class Stack {
             return arr[topOfStack];
         }
     }
+
+    // delete stack
+    public void deleteStack(){
+        arr=null;
+        System.out.println("STack is deleted.");
+    }
 }
