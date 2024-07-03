@@ -25,4 +25,34 @@ public class Stack {
         }
         return false;
     }
+
+    public void push(int value){
+        if(isFull()){
+            System.out.println("STack is full");
+        } else{
+            arr[topOfStack+1] = value;
+            topOfStack++;
+            System.out.println("Value is successfully inserted");
+        }
+    }
+
+    public int pop(){
+        if (isEmpty()){
+            System.out.println("STack is empty so can't pop.");
+            return -1;
+        } else{
+            int topStack = arr[topOfStack];
+            topOfStack--;
+            return topStack;
+        }
+    }
+
+    public int peek(){
+        if(isEmpty()){
+            System.out.println("Stack is empty");
+            return -1;
+        } else{
+            return arr[topOfStack];
+        }
+    }
 }
