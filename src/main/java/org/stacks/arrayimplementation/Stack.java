@@ -59,6 +59,6 @@ public class Stack {
     // delete stack
     public void deleteStack(){
         arr=null;
-        System.out.println("STack is deleted.");
+        System.out.println("Stack is deleted.");
     }
 }
