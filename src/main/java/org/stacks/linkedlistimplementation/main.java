@@ -16,5 +16,10 @@ public class main {
         System.out.println("Peek value of Stack is : " + stack.peek());
 
         stack.deleteStack();
+
+        Stack1 stack1 = new Stack1(1);
+        stack1.push(2);
+        System.out.println("Value at top is : " + stack1.top.value);
+        System.out.println("Pop value is : " + stack1.pop());
     }
 }
