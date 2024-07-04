@@ -77,7 +77,7 @@ public class SinglyLinkedList {
     }
 
     // delete from a given location.
-    void delete(int location){
+    public void delete(int location){
         if(this.head == null){
             System.out.println("SLL doesn't exist.");
         } else if (location==0) {
