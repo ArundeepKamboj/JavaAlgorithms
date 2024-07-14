@@ -14,5 +14,29 @@ public class Main {
         boolean isFull = circularQueue.isFull();
         System.out.println("The Queue is Full? : " + isFull);
         circularQueue.enQueue(6);
+
+        int deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        circularQueue.enQueue(6);
+        circularQueue.enQueue(7);
+
+        int peek = circularQueue.peek();
+        System.out.println("Value Peeked is : " + peek);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+        deQueue = circularQueue.deQueue();
+        System.out.println("Value dequeued is : " + deQueue);
+
+        circularQueue.deleteQUeue();
     }
 }
